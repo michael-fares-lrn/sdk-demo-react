@@ -109,3 +109,92 @@ body {
     }
 }
 
+/* Styles from learnosity  */
+
+/*
+Note: If you want to use Annotations API with Items, the wrapper needs to have "position: relative"
+*/
+#learnosity-items {
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  padding: 1rem;
+  background: #666;
+  margin: -1rem -1rem 1rem -1rem;
+  color: #fff;
+}
+
+.hidden {
+  display: none !important;
+}
+
+nav.navbar {
+  margin: -1rem -1rem 2rem -1rem;
+  padding: 0;
+  background: rgba(86,61,124,.15);
+}
+
+nav.navbar button {
+  border-radius: 0;
+}
+
+.assessment-wrapper {
+  position: relative;
+}
+
+.overlay-wrapper {
+  position: absolute;
+  background: rgba(255,255,255,.95);
+  top: 0;
+  left: -1rem;
+  right: -1rem;
+  bottom: -1rem;
+  z-index: 10000;
+  padding-top: 50px;
+}
+.loader + div {
+  margin-top: -2rem;
+}
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(45, 116, 186, 0.2);
+  border-right: 1.1em solid rgba(45, 116, 186, 0.2);
+  border-bottom: 1.1em solid rgba(45, 116, 186, 0.2);
+  border-left: 1.1em solid #2d74ba;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
