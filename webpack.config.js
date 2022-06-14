@@ -43,7 +43,7 @@ module.exports={
         /** "static" 
          * This property tells Webpack what static file it should serve
         */
-        static: ["./public"],
+        static: ["index.php"],
         /** "open" 
          * opens the browser after server is successfully started
         */

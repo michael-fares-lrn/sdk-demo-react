@@ -30,24 +30,26 @@ export default function App({ config }) {
     });
 
     return (
-        <div>
-            <h1 className="title">Learnosity Items - Inline - React SPA</h1>
-            {isLoading && (
-                <div>
-                    <div className="loader"/>
-                    <div className="text-center">Loading</div>
-                </div>
-            )}
+        <div className="container-fluid">
+            <div className="app">
+                <h1 className="title">Inline Rendering in React</h1>
+                {isLoading && (
+                    <div>
+                        <div className="loader"/>
+                        <div className="text-center">Loading</div>
+                    </div>
+                )}
 
-            {errorMessage && (
-                <div className="alert alert-danger">
-                    <div><strong>Failed to initialize Items API!</strong></div>
-                    <div>{errorMessage}</div>
-                </div>
-            )}
+                {errorMessage && (
+                    <div className="alert alert-danger">
+                        <div><strong>Failed to initialize Items API!</strong></div>
+                        <div>{errorMessage}</div>
+                    </div>
+                )}
 
-            <div className={className}>
-                <Assessment items={items}/>
+                <div className={className}>
+                    <Assessment items={items}/>
+                </div>
             </div>
         </div>
     );

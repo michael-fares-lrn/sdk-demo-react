@@ -25,7 +25,7 @@ export default function Assessment({ items = [] }) {
     return (
         <div className="assessment-wrapper">
             {/* Toolbar */}
-            <nav className="navbar navbar-light d-flex justify-content-between">
+            <nav className="navbar navbar-light d-flex justify-content-around">
                 <div>
                     <button type="button" className="btn btn-secondary" title="Previous Item"
                             onClick={() => setSelectedIndex(selectedIndex + -1)}
