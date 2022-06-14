@@ -1,5 +1,5 @@
 import React from "react";
-import reactDom from "react-dom";
+import { createRoot } from 'react-dom/client';
 import App from "./App"
 
 // =========================
@@ -7,4 +7,8 @@ import App from "./App"
 // =========================
 const appConfig = JSON.parse(document.querySelector('#main-script').getAttribute('data-parameters'));
 
-reactDom.render(<App config={appConfig} />, document.getElementById("root"));
+// New React Methods (createRoot instead of reactDom.render)
+
+const root = createRoot(document.getElementById('root')); 
+
+root.render(<App config={appConfig} />);

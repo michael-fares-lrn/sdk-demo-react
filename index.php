@@ -14,26 +14,6 @@ $security = [
 ];
 
 
-//simple api request object for Items API
-// practice config
-// $request = json_decode('
-// {
-//   "activity_id": "itemsinlinedemo",
-//   "activity_template_id": "demo-activity-1",
-//   "retrieve_tags": true,
-//   "name": "Items API demo - inline activity",
-//   "rendering_type": "inline",
-//   "type": "submit_practice",
-//   "session_id": "'.Uuid::generate().'",
-//   "user_id": "ANONYMIZED_USER_ID",
-//   "items": [
-//     "inline_demo_q1",
-//     "inline_demo_q2",
-//     "Tut002_Item2"
-//   ]
-// }
-// ', true);
-
 $request = [
   'activity_id' => 'itemsinlinedemo',
   'activity_template_id' => 'demo-activity-1',

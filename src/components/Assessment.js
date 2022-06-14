@@ -7,7 +7,7 @@ import PaginatedItems from './PaginatedItems';
 export default function Assessment({ items = [] }) {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [isProcessing, setIsProcessing] = useState(false);
-    const perform = action => {
+    const perform = (action) => {
         setIsProcessing(true);
 
         dispatchItemsAppMethod(action, {
